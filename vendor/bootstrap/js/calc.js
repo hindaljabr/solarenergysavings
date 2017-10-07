@@ -1,31 +1,25 @@
 
-var finalCost = 0;
+var solarSystem="";
 
 var estimateSavings = function () {
 
   var currentUsage = document.getElementById("currentUsage").value;
-  document.getElementById("finalCost").innerHTML = finalCost;
+  document.getElementById("solarSystem").innerHTML = solarSystem;
 
-  if (1 < currentUsage <= 2000)
-  finalCost=(currentUsage*5/100);
-
-  else if (2001 < currentUsage <= 4000) {
-  finalCost=(currentUsage*10)/100;
+  if (1 < currentUsage <= 4000) {
+  solarSystem=("1.5 kW");
   }
-
+  
   else if (4001 < currentUsage <= 6000) {
-  finalCost=(currentUsage*20)/100;
+  solarSystem=("3 kW");
   }
 
-  else if (currentUsage>6000) {
-  finalCost=(currentUsage*30)/100;
+  else if (currentUsage > 6000) {
+  solarSystem=("5 kW");
   }
 
-  document.getElementById("finalCost").innerHTML = finalCost-543;
+  document.getElementById("solarSystem").innerHTML = solarSystem;
 
-  $(document).ready(estimateSavings(){
-   $("#button").click(estimateSavings(){
-       $("#result").show();
-   });
-  });
+  var x = document.getElementById("result");
+  x.style.display = "block";
 }
