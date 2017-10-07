@@ -1,0 +1,49 @@
+/*
+	Header
+*/
+.sec {
+	color: #9b9b9b;
+	background-color: #f3f3f3;
+	padding: 0.25em 0.75em;
+}
+
+#lang {
+	text-align: right;
+}
+
+a.l-link {
+	text-decoration: none;
+}
+
+.l-link:link, .l-link:visited {
+	color: #9b9b9b;
+}
+
+.l-link:hover, .l-link:active {
+	color: black;
+}
+
+#logo-img {
+	height: 120px;
+}
+
+.nav-link {
+	font-weight: bold;
+}
+
+.nav-link:link, .nav-link:visited {
+	color: #2c2c81;
+}
+
+.nav-link:active, .nav-link:hover {
+	color: #9b9b9b;
+}
+
+/*
+	Footer
+*/
+footer {
+	text-align: center;
+	font-size: 10px;
+	padding-top: 10px;
+}
