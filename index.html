@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Solar Energy Saving</title>
+    <title>Solar Energy</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
     <header class="intro-header">
       <div class="container">
         <div class="intro-message">
-          <h1>Solar Energy Saving</h1>
+          <h1>Solar Energy</h1>
           <h3>Reduce your electricity bill using solar panels!</h3>
           <hr class="intro-divider">
           <!-- <ul class="list-inline intro-social-buttons">
@@ -137,13 +137,14 @@
           <div class="col-lg-5 ml-auto">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
-            <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-            <p class="lead">This template features the 'Lato' font, part of the
-              <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as
-              <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+            <h2 class="section-heading">Calculate how much you'll be <br>saving with using solar panels!</h2>
+            <p class="lead">What is your monthly energy usage? (in KiloWatts)</p>
+            <input type="text" id="currentUsage" value="" placeholder=" Your usage.. ">
+            <button class="btn-lx" onclick="estimateSavings();" id="button">Calculate</button>
+            <p class="" id="result">You will save <span id="finalCost"></span></p>
           </div>
           <div class="col-lg-5 mr-auto ">
-            <img class="img-fluid" src="img/phones.png" alt="">
+            <img class="" src="img/dollar-sign.png" alt="" style="width: 200px; height:200px;">
           </div>
         </div>
 
@@ -219,6 +220,8 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/calc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </body>
 
