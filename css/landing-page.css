@@ -155,7 +155,7 @@ p.copyright {
   margin: 15px 0 0;
 }
 #logo-img {
-  height: 80px;
+  height: 50px;
 }
 .section-heading-spacer2 {
   float: center;
@@ -178,4 +178,9 @@ p.copyright {
   text-align: center;
   vertical-align: middle;
   margin-top: 29%;
+}
+
+#solarSystem{
+color: #88c5cc;
+text-decoration: underline;
 }
