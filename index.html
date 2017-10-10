@@ -37,16 +37,17 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link smoothScroll" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Purpose </a>
+              <a class="nav-link smoothScroll" href="#purpose">Purpose </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Calculate</a>
+              <a class="nav-link smoothScroll" href="#ss-sizes">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Get your own</a>
+              <a class="nav-link smoothScroll" href="#calculate">For You</a>
+
             </li>
           </ul>
         </div>
@@ -85,13 +86,13 @@
     </header>
 
     <!-- Page Content -->
-<section class="content-section-b">
+<section class="content-section-b" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 ml-auto">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
-            <h2 class="section-heading">What is Solar Panel<br>Solar Panels:</h2>
+            <h2 class="section-heading">What are Solar Panels</h2>
 
             <a target="_blank" href="https://en.wikipedia.org/wiki/Solar_panel"><p class="lead">Solar panels</a>
              are devices that convert light into electricity. They are called "solar" panels because most of the time, the most powerful source of light available is the Sun.</p>
@@ -106,32 +107,33 @@
       <!-- /.container -->
     </section>
 
-    <section class="content-section-a">
+    <section class="content-section-a" id="purpose">
       <div class="container">
         <div class="row">
+         
           <div class="col-lg-5 ml-auto">
+            <img class="img-fluid" src="img/renewable-energy.svg" alt="" style="width: 250px; height: 250px;">
+          </div>
+           <div class="col-lg-5 mr-auto">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">Why Do We Need Solar Energy?</h2>
-            <p class="lead">Unlike fossil fuels, solar energy doesn't produce the harmful pollutants responsible for increasing the greenhouse effect which leads to global warming. Solar energy is a clean and sustainable source of energy that you can use for solar electricity, solar heating, solar cooling, and solar lighting.
+            <p class="lead">Unlike fossil fuels, solar energy doesn't produce the harmful pollutants. Solar energy is a clean and sustainable source of energy that you can use.
               <a href="www.solar-energy-at-home.com/why-use-solar-energy.html">Source</a></p>
-          </div>
-          <div class="col-lg-5 mr-auto">
-            <img class="img-fluid" src="img/solar-purpose.png" alt="">
           </div>
         </div>
       </div><!-- /.container -->
     </section>
   
   <!---->
-      <section id="ss-sizes">
+      <section class="content-section-b" id="ss-sizes">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <hr class="section-heading-spacer2">
             <div class="clearfix"></div>
-            <h2 class="section-heading">Solar Systems Sizes</h2>
-            <h3 class="section-subheading text-muted">Get to know the different sizes of solar systems.</h3>
+            <h2 class="section-heading">Popular Solar Systems</h2>
+            <h3 class="section-subheading text-muted">Get to know the different types of solar systems.</h3>
           </div>
         </div>
         <div class="row text-center">
@@ -141,8 +143,8 @@
                 1.5kW
               </div>
             </div>
-            <h4 class="service-heading">1.5kW Solar System</h4>
-            <p class="text-muted">A 1.5kW solar system has 6 panels – perfect for smaller houses.</p>
+            <h4 class="service-heading">Solar System</h4>
+            <p class="text-muted">Consists of 6 panels<br> Perfect for smaller houses<br> Possible savings: 393 SAR/month</p>
           </div>
           <div class="col-md-4">
             <div class="circle">
@@ -150,8 +152,8 @@
                 3kW
               </div>
             </div>
-            <h4 class="service-heading">3kW Solar System</h4>
-            <p class="text-muted">A 3kW solar system has 12 solar panels – perfect for small working families with a pool.</p>
+            <h4 class="service-heading">Solar System</h4>
+            <p class="text-muted">Consists of 12 panels <br> Perfect for small working families with a pool<br> Possible savings: 749 SAR/month</p>
           </div>
           <div class="col-md-4">
             <div class="circle">
@@ -159,15 +161,15 @@
                 5kW
               </div>
             </div>
-            <h4 class="service-heading">5kW Solar System</h4>
-            <p class="text-muted">A 5kW solar system consist of 18 solar panels – perfect for medium to large households.</p>
+            <h4 class="service-heading">Solar System</h4>
+            <p class="text-muted">Consists of 18 panels <br> Perfect for medium to large households<br> Possible savings: 1311 SAR/month</p>
           </div>
         </div>
       </div>
     </section>
     <!-- /.content-section-b -->
 
-    <section class="content-section-b">
+    <section class="content-section-a" id="calculate">
 
       <div class="container">
 
@@ -177,10 +179,10 @@
             <div class="clearfix"></div>
             <h2 class="section-heading">Find the most suitable solar system for you!</h2>
             <p class="lead">What is your monthly energy usage? (in KiloWatts)</p>
-            <input type="text" id="currentUsage" value="" placeholder=" Your usage.. ">
-            <button class="btn-primary" onclick="estimateSavings();" id="button">Calculate</button>
-            <br>
-            <p class="lead" id="result">The most suitable solar system: <span id="solarSystem"></span></p>
+            <input type="text" id="currentUsage" value="" placeholder=" ex: 5000">
+            <button class="btn-primary" onclick="estimateSavings();" id="button">Go!</button>
+            <br><br>
+            <p class="lead" id="result">The most suitable solar system: <a href="#ss-sizes" class="smoothScroll" id="solarSystem"></a></p>
           </div>
           <div class="col-lg-5 mr-auto ">
             <img class="" src="img/savemoney.svg" alt="" style="width: 250px; height:250px;">
@@ -198,30 +200,9 @@
       <div class="container">
 
         <div class="row">
+          
           <div class="col-lg-6 my-auto">
-            <h2>Connect to Start Bootstrap:</h2>
-          </div>
-          <div class="col-lg-6 my-auto">
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-linkedin fa-fw"></i>
-                  <span class="network-name">Linkedin</span>
-                </a>
-              </li>
-            </ul>
+            <h2>Save your wallet and <br>the environment</h2>
           </div>
         </div>
 
@@ -235,23 +216,23 @@
     <footer>
       <div class="container">
         <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Home</a>
+          <li class="list-inline-item ">
+            <a class="smoothScroll" href="#">Home</a>
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#about">About</a>
+            <a class="smoothScroll" href="#about">About</a>
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#services">Services</a>
+            <a class="smoothScroll" href="#ss-sizes">Products</a>
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#contact">Contact</a>
+            <a class="smoothScroll" href="#calculate">For You</a>
           </li>
         </ul>
-        <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
+        <p class="copyright text-muted small">Copyright &copy; 2017. All Rights Reserved</p>
       </div>
     </footer>
 
@@ -260,6 +241,7 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/bootstrap/js/calc.js"></script>
+    <script src="vendor/jquery/smoothscroll.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </body>
